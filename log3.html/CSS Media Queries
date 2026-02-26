@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<!-- meta tags and title -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Media Queries</title>
+
+	<!-- external and internal CSS -->
+	<link rel="stylesheet" href="styles.css" media="all">
+	<style>
+		textarea { 
+			display: block; 
+			width: 100%; 
+			height: 120px; 
+			margin-top: 10px; 
+			margin-bottom: 20px;
+		}
+	</style>
+
+
+</head>
+<body>
+
+	<h1>css Media Queries</h1>
+
+    <h2>How Media Queries Work</h2>
+
+    <p>
+    CSS media queries are a useful tool for developers to create different layouts of their website based on the device being used to access the site. Websites can have one layout on a computer and another layout on a mobile device due to the ability of media queries to check the screen size, width, height, and orientation of the device it is being viewed from.
+    A media query tests for a condition and if the condition is met, the manners in that media ask will be applied. If the condition is not met, the manners in that media query will not be applied. This allows a website to automatically change its content depending on what size screen the user has.
+    Because so many more people use a variety of devices today, media queries have grown in significance. Without them, websites may not fit well on smaller screened computers and will be difficult to read or navigate. Instead, they allow websites to be more easily navigated and used.
+    </p>
+
+    <h2>Common media features</h2>
+
+    <p>
+    The maximum-width property applies style changes to allow a designer to create layouts to fit a mobile screen size based on the size of the device's screen. For instance, if the device's screen dimensions are 600 pixels across or 600 pixels width, the style adjustments will also apply so that some styles can be adjusted to fit the content. 
+    Some examples of how this could work would be changing the text size of mobile devices, stacking elements vertically, changing margins and other things. These changes to a website's design will now allow users to navigate their mobile device's visit much easier while viewing a website.
+    </p>
+
+    <textarea>
+    @media (max-width: 600px) {
+        body {
+            background-color: lightblue;
+        }
+    }
+    </textarea>
+
+    <p>
+    With the min-width assign, you can apply styles based on the minimum width of your display. This is useful when designing tablet. 
+    Layouts and providing more room for content as well as larger images or a multi-column layout.
+    </p>
+
+    <textarea>
+    @media (min-width: 768px) {
+        body {
+            font-size: 18px;
+        }
+    }
+    </textarea>
+
+    <p>
+    The orientation feature detects either the device is in portrait or landscape mode.
+    This helps designers change the layout based on how the user is holding the device.
+    </p>
+
+    <textarea>
+    @media (orientation: landscape) {
+        body {
+            background-color: lightgray;
+        }
+    }
+    </textarea>
+
+    <p>
+    The max-height feature concerns styles when the screen height is below a definite value. It can help add content for smaller screens.
+    </p>
+
+    <textarea>
+    @media (max-height: 500px) {
+        body {
+            font-size: 20px;
+        }
+    }
+    </textarea>
+
+</body>
+</html>
